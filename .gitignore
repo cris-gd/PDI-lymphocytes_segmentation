@@ -1,0 +1,8 @@
+# Ignorar carpetas de Python
+__pycache__/
+
+# Ignorar entorno virtual con nombre específico
+.venv_project/
+
+# Ignorar archivo PDF dentro de la carpeta 'project'
+project/*.pdf
