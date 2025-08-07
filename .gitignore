@@ -5,4 +5,4 @@ __pycache__/
 .venv_project/
 
 # Ignorar archivo PDF dentro de la carpeta 'project'
-project/*.pdf
+lymphocytes-segmentation/*.pdf
