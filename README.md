@@ -122,7 +122,7 @@ See `requirements.txt` for the full list.
 
 ## Authors
 
-- **Paula Crespo Ortega**
-- **Cristina García Domingo**
+- **Paula Crespo**
+- **Cristina García**
 
 *Students of Biomedical Engineering — Universidad Pública de Navarra (UPNA)*
