@@ -6,3 +6,6 @@ __pycache__/
 
 # Ignorar archivo PDF dentro de la carpeta 'project'
 lymphocytes-segmentation/*.pdf
+
+# Ignorar database
+lympho_database_v20241117/
