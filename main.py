@@ -2,14 +2,15 @@ import lymphocytes as lymph
 import cv2 as cv
 import numpy as np
 import copy as copy
+import os
 
 #Segmentación y detección CD8+ más óptima
 print('• Resultados de la segmentación y detección CD8+ más óptima conseguida:')
 general_configuration={'imgDAPI_path':"lympho_database_v20241117/database_v20241117/dapi"}
-general_configuration['gtNuclei_path']='lympho_database_v20241117\database_v20241117\dapi_mask'
-general_configuration['imgCD8_path']='lympho_database_v20241117\database_v20241117\cd8'
-general_configuration['gtCD8_path']='lympho_database_v20241117\database_v20241117\cd8_mask'
-general_configuration['out_path']='lympho_database_v20241117\database_v20241117\out'
+general_configuration['gtNuclei_path'] = os.path.join('lympho_database_v20241117', 'database_v20241117', 'dapi_mask')
+general_configuration['imgCD8_path']   = os.path.join('lympho_database_v20241117', 'database_v20241117', 'cd8')
+general_configuration['gtCD8_path']    = os.path.join('lympho_database_v20241117', 'database_v20241117', 'cd8_mask')
+general_configuration['out_path']      = os.path.join('lympho_database_v20241117', 'database_v20241117', 'out')
 general_configuration['params_seg']= {'dFiltro':7, 'sColor':60, 'sSpace':200,'se_tophat':34,'se_close':4,'num_dilate':1, 'se_dilation':3,'th_dt':15,'se_erosion':3,'se_cleaning':6}
 general_configuration['params_det']={'se_tophat':4,'c_th':-2,'se_dilate':4, 'num_dilate':1,'se_erosion':9, 'num_erosion':1, 'se_open':3, 'num_open':3}    
 
